@@ -5,9 +5,10 @@ CXX = g++ -c
 LD = g++ -o
 RM = rm -f
 CXXFLAGS = -Wall -std=c++11
-LDFLAGS = 
+LDFLAGS =
 
-$(info Frabrication du programme: $(TARGET))
+$(info Fabrication du programme : $(TARGET))
+
 all : $(TARGET)
 
 $(TARGET): $(TARGET).o $(MODULE).o
@@ -22,10 +23,10 @@ $(MODULE).o: $(MODULE).cpp $(MODULE).h
 .PHONY: clean
 
 clean:
-	$(RM)*.o
+	$(RM) *.o
 
 cleanall:
-	$(RM) *.o$(TARGET)
+	$(RM) *.o $(TARGET)
 
 rebuild: clean all
 

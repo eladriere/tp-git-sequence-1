@@ -1,6 +1,6 @@
 L'exécution d'une commande Linux :
 
-```sh
+sh
 $ make rebuild
 Fabrication du programme : bienvenue
 rm -f *.o
@@ -10,15 +10,14 @@ g++ -o bienvenue  bienvenue.o fonction-bienvenue.o
 
 $ ./bienvenue
 Bienvenue le monde !
-```
 
 Le contenu d'un fichier source C++ :
 
-```cpp
+cpp
 #ifndef FONCTION_BIENVENUE_H
 #define FONCTION_BIENVENUE_H
 
 void afficherBienvenue();
 
 #endif // FONCTION_BIENVENUE_H
-```
+
